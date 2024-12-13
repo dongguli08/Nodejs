@@ -1,0 +1,16 @@
+{
+  "name": "singinsingout",
+  "version": "1.0.0",
+  "main": "svr.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "mysql8": "^2.17.3"
+  }
+}
