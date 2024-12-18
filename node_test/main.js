@@ -25,3 +25,7 @@ app.get('/working',(req,res)=>{
    //  res.send('about에 대한 요청')
    res.sendFile(__dirname+'/pages/working.html')
 })  
+
+function name(params) {
+    
+}

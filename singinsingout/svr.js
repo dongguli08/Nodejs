@@ -6,7 +6,7 @@ const dbconfig = require('./config/dbconfig.json');
 const { error } = require('console');
 const { exec } = require('child_process');
 
-// Database connection pool
+// Database connection pool 
 const pool = mysql.createPool({
     connectionLimit: 10,
     host: dbconfig.host,
