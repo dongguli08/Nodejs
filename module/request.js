@@ -1,3 +1,4 @@
+const {read} = require('./response')
 module.exports.A=1  
 
 function encrypt(data){

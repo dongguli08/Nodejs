@@ -1,0 +1,32 @@
+<body>
+    <section>
+        <h1>home</h1>
+        <form action="/logout" method="post">
+            <button type="submit">
+                logout
+            </button> 
+        </form>
+        <form action="/delete" method="post">
+            <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text" required />
+            </div>
+            <button type="delete">
+                회원 삭제
+            </button>
+        </form>
+        <form action="/update" method="post">
+            <div>
+                <label for="email">기존이메일</label>
+                <input id="email" name="old_email" type="text" required />
+            </div>
+            <div>
+                <label for="email">새로운이메일</label>
+                <input id="email" name="new_email" type="text" required />
+            </div>
+            <button type="delete">
+                이메일 바꾸기
+            </button>
+        </form>
+    </section>
+</body>

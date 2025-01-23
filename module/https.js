@@ -1,6 +1,6 @@
 const {send} = require('./request');//./request와 ./response 파일에서 모듈을 불러오는 코드다
 const {read} = require('./response');//request.js와 response.js 파일을 불러오고 각각 request와 response 변수에 저장
-
+const {decrypt} = require('./response');
 
 
 function make_request(url,data){
@@ -12,4 +12,5 @@ function make_request(url,data){
 }
 
 const responseData = make_request('https://naver.com','any data')  //make_request 함수가 실행된 결과값이 responseData로 들어가게 된다
-console.log(responseData)
+// console.log(responseData)
+console.log(require.cache);
