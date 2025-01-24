@@ -1,0 +1,14 @@
+version: "3"
+services:
+  db:
+    image: postgres:latest
+    container_name: postgres_typeorm_container
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: "postgres"         # 환경변수에서 대문자 사용
+      POSTGRES_PASSWORD: "password"     # 환경변수에서 대문자 사용
+      POSTGRES_DB: "mydb"               # 생성할 데이터베이스 이름
+    volumes:
+      - ./data:/var/lib/postgresql/data  # 데이터베이스 데이터 저장 경로 수정
