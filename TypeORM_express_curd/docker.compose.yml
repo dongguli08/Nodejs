@@ -1,0 +1,14 @@
+version: "3"
+services:
+  db:
+    image: postgres:latest #postgres 최신 버전 이미지를 사용하도록 설정함(이미지로 db를 선택함)
+    container_name: postgres_typeorm_container    #이미지를 기반으로 만들어진 "실행 중인 인스턴스"야.
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: "postgres"         # 환경변수에서 대문자 사용
+      POSTGRES_PASSWORD: "password"     # 환경변수에서 대문자 사용
+      POSTGRES_DB: "mydb"               # 생성할 데이터베이스 이름
+    volumes:
+      - ./data:/var/lib/postgresql/data  # 데이터베이스 데이터 저장 경로 수정
